@@ -376,6 +376,7 @@ void rtc_show_date_time (void)
 
 void rtc_begin_modify (void)
 {
+	callset_invoke (time_modified);
 	rtc_edit_field = 0;
 }
 
